@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SpojPractice",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Prime1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Prime1-Debug-b6eea29b78c50185c9c9.json",
+					"name" : "Prime1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SegmentedSieve::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SegmentedSieve-Debug-d2e8e0450bafe9695583.json",
+					"name" : "SegmentedSieve",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SieveOfEratosthenes::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SieveOfEratosthenes-Debug-8a9de1b401f68a0f8182.json",
+					"name" : "SieveOfEratosthenes",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Test-Debug-3eaf0406e87ebdd6242c.json",
+					"name" : "Test",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/shwet/source/repos/SpojPractice/out/build/x64-debug",
+		"source" : "C:/Users/shwet/source/repos/SpojPractice"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

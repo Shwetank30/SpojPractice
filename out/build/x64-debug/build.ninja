@@ -41,40 +41,148 @@ include CMakeFiles\rules.ninja
 
 cmake_ninja_workdir = C$:\Users\shwet\source\repos\SpojPractice\out\build\x64-debug\
 # =============================================================================
-# Object build statements for EXECUTABLE target SpojPractice
+# Object build statements for EXECUTABLE target Test
 
 
 #############################################
-# Order-only phony target for SpojPractice
+# Order-only phony target for Test
 
-build cmake_object_order_depends_target_SpojPractice: phony || CMakeFiles\SpojPractice.dir
+build cmake_object_order_depends_target_Test: phony || CMakeFiles\Test.dir
 
-build CMakeFiles\SpojPractice.dir\Prime1.cpp.obj: CXX_COMPILER__SpojPractice_Debug C$:\Users\shwet\source\repos\SpojPractice\Prime1.cpp || cmake_object_order_depends_target_SpojPractice
+build CMakeFiles\Test.dir\Test.cpp.obj: CXX_COMPILER__Test_Debug C$:\Users\shwet\source\repos\SpojPractice\Test.cpp || cmake_object_order_depends_target_Test
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++20
-  OBJECT_DIR = CMakeFiles\SpojPractice.dir
-  OBJECT_FILE_DIR = CMakeFiles\SpojPractice.dir
-  TARGET_COMPILE_PDB = CMakeFiles\SpojPractice.dir\
-  TARGET_PDB = SpojPractice.pdb
+  OBJECT_DIR = CMakeFiles\Test.dir
+  OBJECT_FILE_DIR = CMakeFiles\Test.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Test.dir\
+  TARGET_PDB = Test.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target SpojPractice
+# Link build statements for EXECUTABLE target Test
 
 
 #############################################
-# Link the executable SpojPractice.exe
+# Link the executable Test.exe
 
-build SpojPractice.exe: CXX_EXECUTABLE_LINKER__SpojPractice_Debug CMakeFiles\SpojPractice.dir\Prime1.cpp.obj
+build Test.exe: CXX_EXECUTABLE_LINKER__Test_Debug CMakeFiles\Test.dir\Test.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = CMakeFiles\SpojPractice.dir
+  OBJECT_DIR = CMakeFiles\Test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\SpojPractice.dir\
-  TARGET_FILE = SpojPractice.exe
-  TARGET_IMPLIB = SpojPractice.lib
-  TARGET_PDB = SpojPractice.pdb
+  TARGET_COMPILE_PDB = CMakeFiles\Test.dir\
+  TARGET_FILE = Test.exe
+  TARGET_IMPLIB = Test.lib
+  TARGET_PDB = Test.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Prime1
+
+
+#############################################
+# Order-only phony target for Prime1
+
+build cmake_object_order_depends_target_Prime1: phony || CMakeFiles\Prime1.dir
+
+build CMakeFiles\Prime1.dir\Prime1.cpp.obj: CXX_COMPILER__Prime1_Debug C$:\Users\shwet\source\repos\SpojPractice\Prime1.cpp || cmake_object_order_depends_target_Prime1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++20
+  OBJECT_DIR = CMakeFiles\Prime1.dir
+  OBJECT_FILE_DIR = CMakeFiles\Prime1.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Prime1.dir\
+  TARGET_PDB = Prime1.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Prime1
+
+
+#############################################
+# Link the executable Prime1.exe
+
+build Prime1.exe: CXX_EXECUTABLE_LINKER__Prime1_Debug CMakeFiles\Prime1.dir\Prime1.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\Prime1.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\Prime1.dir\
+  TARGET_FILE = Prime1.exe
+  TARGET_IMPLIB = Prime1.lib
+  TARGET_PDB = Prime1.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target SieveOfEratosthenes
+
+
+#############################################
+# Order-only phony target for SieveOfEratosthenes
+
+build cmake_object_order_depends_target_SieveOfEratosthenes: phony || CMakeFiles\SieveOfEratosthenes.dir
+
+build CMakeFiles\SieveOfEratosthenes.dir\SieveOfEratosthenes.cpp.obj: CXX_COMPILER__SieveOfEratosthenes_Debug C$:\Users\shwet\source\repos\SpojPractice\SieveOfEratosthenes.cpp || cmake_object_order_depends_target_SieveOfEratosthenes
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++20
+  OBJECT_DIR = CMakeFiles\SieveOfEratosthenes.dir
+  OBJECT_FILE_DIR = CMakeFiles\SieveOfEratosthenes.dir
+  TARGET_COMPILE_PDB = CMakeFiles\SieveOfEratosthenes.dir\
+  TARGET_PDB = SieveOfEratosthenes.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target SieveOfEratosthenes
+
+
+#############################################
+# Link the executable SieveOfEratosthenes.exe
+
+build SieveOfEratosthenes.exe: CXX_EXECUTABLE_LINKER__SieveOfEratosthenes_Debug CMakeFiles\SieveOfEratosthenes.dir\SieveOfEratosthenes.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\SieveOfEratosthenes.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\SieveOfEratosthenes.dir\
+  TARGET_FILE = SieveOfEratosthenes.exe
+  TARGET_IMPLIB = SieveOfEratosthenes.lib
+  TARGET_PDB = SieveOfEratosthenes.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target SegmentedSieve
+
+
+#############################################
+# Order-only phony target for SegmentedSieve
+
+build cmake_object_order_depends_target_SegmentedSieve: phony || CMakeFiles\SegmentedSieve.dir
+
+build CMakeFiles\SegmentedSieve.dir\SegmentedSieve.cpp.obj: CXX_COMPILER__SegmentedSieve_Debug C$:\Users\shwet\source\repos\SpojPractice\SegmentedSieve.cpp || cmake_object_order_depends_target_SegmentedSieve
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++20
+  OBJECT_DIR = CMakeFiles\SegmentedSieve.dir
+  OBJECT_FILE_DIR = CMakeFiles\SegmentedSieve.dir
+  TARGET_COMPILE_PDB = CMakeFiles\SegmentedSieve.dir\
+  TARGET_PDB = SegmentedSieve.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target SegmentedSieve
+
+
+#############################################
+# Link the executable SegmentedSieve.exe
+
+build SegmentedSieve.exe: CXX_EXECUTABLE_LINKER__SegmentedSieve_Debug CMakeFiles\SegmentedSieve.dir\SegmentedSieve.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\SegmentedSieve.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\SegmentedSieve.dir\
+  TARGET_FILE = SegmentedSieve.exe
+  TARGET_IMPLIB = SegmentedSieve.lib
+  TARGET_PDB = SegmentedSieve.pdb
 
 
 #############################################
@@ -102,7 +210,13 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build SpojPractice: phony SpojPractice.exe
+build Prime1: phony Prime1.exe
+
+build SegmentedSieve: phony SegmentedSieve.exe
+
+build SieveOfEratosthenes: phony SieveOfEratosthenes.exe
+
+build Test: phony Test.exe
 
 # =============================================================================
 # Folder targets.
@@ -112,7 +226,7 @@ build SpojPractice: phony SpojPractice.exe
 #############################################
 # Folder: C:/Users/shwet/source/repos/SpojPractice/out/build/x64-debug
 
-build all: phony SpojPractice.exe
+build all: phony Test.exe Prime1.exe SieveOfEratosthenes.exe SegmentedSieve.exe
 
 # =============================================================================
 # Built-in targets
