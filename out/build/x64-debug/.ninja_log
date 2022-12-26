@@ -1,0 +1,15 @@
+# ninja log v5
+9	817	6936865032308296	CMakeFiles/SpojPractice.dir/Spoj1.cpp.obj	3417192b6bbb6326
+2	940	6936879562002304	CMakeFiles/SpojPractice.dir/Test.cpp.obj	93bb17354e1f5bf0
+818	966	6936865033580377	SpojPractice.exe	1782a82924c5e6f7
+6	939	6936879562002304	CMakeFiles/SpojPractice.dir/Prime1.cpp.obj	d93b5c3ab707e9d8
+12	731	6936880964561198	CMakeFiles/SpojPractice.dir/Prime1.cpp.obj	d93b5c3ab707e9d8
+732	857	6936880965547676	SpojPractice.exe	f979376598ecd14a
+9	662	6936883179802758	CMakeFiles/SpojPractice.dir/Prime1.cpp.obj	d93b5c3ab707e9d8
+663	802	6936883180950520	SpojPractice.exe	f979376598ecd14a
+9	657	6936883962402951	CMakeFiles/SpojPractice.dir/Prime1.cpp.obj	d93b5c3ab707e9d8
+657	789	6936883963487457	SpojPractice.exe	f979376598ecd14a
+7	636	6936884501983271	CMakeFiles/SpojPractice.dir/Prime1.cpp.obj	d93b5c3ab707e9d8
+636	762	6936884503010959	SpojPractice.exe	f979376598ecd14a
+8	663	6936885119220102	CMakeFiles/SpojPractice.dir/Prime1.cpp.obj	d93b5c3ab707e9d8
+664	790	6936885120279341	SpojPractice.exe	f979376598ecd14a
