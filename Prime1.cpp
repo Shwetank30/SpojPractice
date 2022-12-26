@@ -6,117 +6,86 @@
 #include <iostream>
 #include <cstring>
 #include <vector>
+#include <cmath>
 
 using namespace std;
 
 // This functions finds all primes smaller than 'limit'
 // using simple sieve of eratosthenes. It also stores
 // found primes in vector prime[]
-void sieveOfEratosthenes(int limit, vector<int>& prime)
+void sieveOfEratosthenes(int limit, vector<int>& prime) // 3, [3]
 {
 	// Create a boolean array "mark[0..n-1]" and initialize
 	// all entries of it as true. A value in mark[p] will
 	// finally be false if 'p' is Not a prime, else true.
-	vector<bool> mark(limit + 1, true);
-	for (int p = 2; p * p < limit; p++)
+	vector<bool> mark(limit + 1, true); // 4, T
+	mark[0] = false;
+	mark[1] = false;
+	for (int p = 2; (p * p) <= limit; p++) // p = 4<3
 	{
 		// If p is not changed, then it is a prime
 		if (mark[p])
 		{
 			// Update all multiples of p
-			for (int i = p * p; i < limit; i += p)
+			for (int i = p * p; i <= sqrt(limit); i += p)
 				mark[i] = false;
 		}
 	}
 	// Print all prime numbers and store them in prime
-	for (int p = 2; p < limit; p++)
+	for (int p = 2; p*p <= limit; p++) // 2<3
 	{
-		if (mark[p])
+		if (mark[p]) // 2
 		{
-			prime.push_back(p);
-			cout << p << "\n";
+			prime.push_back(p); //2
 		}
 	}
 }
 
 // Prints all prime numbers smaller than 'n'
-void segmentedSieve(int m, int n)
+void segmentedSieve(int low, int high) // 3 5 
 {
+	if (low < 2 && high >= 2)
+		low = 2;
 	// Compute all primes smaller than or equal
-	// to square root of n using simple sieve
-	int limit = floor(sqrt(n)) + 1;
-	vector<int> prime;
-	prime.reserve(limit);
-	sieveOfEratosthenes(limit, prime);
-	int diff = n - m + 1;
+	// to square root of n using simple sieve 
+	vector<int> prime; 
+	sieveOfEratosthenes(high, prime); // 3, size[3]
+	int diff = high - low + 1;
+	bool* mark = new bool[diff];
+	memset(mark, true, sizeof(mark));
 
-
-	// Divide the range [0..n-1] in different segments
-	// We have chosen segment size as sqrt(n).
 	
-	int low = limit;
-	int high = 2 * limit;
-
-	// While all segments of range [0..n-1] are not processed,
-	// process one segment at a time
-	while (low < n)
+	for(int i : prime)
 	{
-		if (high >= n)
-			high = n;
+		int lower = (low / i);
 
-		// To mark primes in current range. A value in mark[i]
-		// will finally be false if 'i-low' is Not a prime,
-		// else true.
-		bool* mark = new bool[diff + 1];
-		memset(mark, true, sizeof(mark));
-
-		// Use the found primes by simpleSieve() to find
-		// primes in current range
-
-		for (int i = 0; i < prime.size(); i++)
-		{
-			// Find the minimum number in [low..high] that is
-			// a multiple of prime[i] (divisible by prime[i])
-			// For example, if low is 31 and prime[i] is 3,
-			// we start with 33.
-			int loLim = floor(low / prime[i]) * prime[i];
-			if (loLim < low)
-				loLim += prime[i];
-			
-			/* Mark multiples of prime[i] in [low..high]:
-                We are marking j - low for j, i.e. each number
-                in range [low, high] is mapped to [0, high-low]
-                so if range is [50, 100] marking 50 corresponds
-                to marking 0, marking 51 corresponds to 1 and
-                so on. In this way we need to allocate space only
-                for range */
-			for (int j = loLim; j < high; j += prime[i])
-				mark[j - low] = false;
-		}
-
-		// Numbers which are not marked as false are prime
-		for (int i = low; i < high; i++)
-			if (mark[i - low])
-				cout << i << "\n";
-
-		// Update low and high for next segment
-		low = low + limit;
-		high = high + limit;
-
-		delete[] mark;
+		if (lower <= 1)
+			lower = i + i;
+		else if (low % i)
+			lower = (lower * i) + i;
+		else
+			lower = (lower * i);
+		for (int j = lower; j <= high; j += i)
+			mark[j - low] = false;
 	}
+	for (int i = low; i <= high; i++)
+	{
+		if (mark[i - low])
+			cout << i << "\n";
+	}
+	
 }
 int main()
 {
-	int t,m,n;
+	int t,m,n; 
 	cin >> t;
 	for (int i = 0; i < t; i++)
 	{
-		cin >> m >> n;
+		cin >> m >> n; // 3 5 
 		segmentedSieve(m, n);
 		cout << "\n";
 	}
-	
+	return 0;
 }
 
 
