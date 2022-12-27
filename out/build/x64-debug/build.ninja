@@ -184,6 +184,42 @@ build SegmentedSieve.exe: CXX_EXECUTABLE_LINKER__SegmentedSieve_Debug CMakeFiles
   TARGET_IMPLIB = SegmentedSieve.lib
   TARGET_PDB = SegmentedSieve.pdb
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Onp
+
+
+#############################################
+# Order-only phony target for Onp
+
+build cmake_object_order_depends_target_Onp: phony || CMakeFiles\Onp.dir
+
+build CMakeFiles\Onp.dir\Onp.cpp.obj: CXX_COMPILER__Onp_Debug C$:\Users\shwet\source\repos\SpojPractice\Onp.cpp || cmake_object_order_depends_target_Onp
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++20
+  OBJECT_DIR = CMakeFiles\Onp.dir
+  OBJECT_FILE_DIR = CMakeFiles\Onp.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Onp.dir\
+  TARGET_PDB = Onp.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Onp
+
+
+#############################################
+# Link the executable Onp.exe
+
+build Onp.exe: CXX_EXECUTABLE_LINKER__Onp_Debug CMakeFiles\Onp.dir\Onp.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\Onp.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\Onp.dir\
+  TARGET_FILE = Onp.exe
+  TARGET_IMPLIB = Onp.lib
+  TARGET_PDB = Onp.pdb
+
 
 #############################################
 # Utility command for edit_cache
@@ -210,6 +246,8 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build Onp: phony Onp.exe
+
 build Prime1: phony Prime1.exe
 
 build SegmentedSieve: phony SegmentedSieve.exe
@@ -226,7 +264,7 @@ build Test: phony Test.exe
 #############################################
 # Folder: C:/Users/shwet/source/repos/SpojPractice/out/build/x64-debug
 
-build all: phony Test.exe Prime1.exe SieveOfEratosthenes.exe SegmentedSieve.exe
+build all: phony Test.exe Prime1.exe SieveOfEratosthenes.exe SegmentedSieve.exe Onp.exe
 
 # =============================================================================
 # Built-in targets
